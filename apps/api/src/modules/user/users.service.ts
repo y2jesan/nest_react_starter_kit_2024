@@ -12,4 +12,11 @@ export class UserService {
     const newUser = new this.userModel(createUserDto);
     return newUser.save();
   }
+  getAllUsers() {
+    return this.userModel.find();
+  }
+
+  getUserById(id: string) {
+    return this.userModel.findById(id);
+  }
 }
