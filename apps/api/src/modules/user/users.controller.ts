@@ -1,6 +1,6 @@
 import { Body, Controller, Get, HttpException, Param, Post } from '@nestjs/common';
 import { Types } from 'mongoose';
-import { CreateUserDto } from './dto/createUser.dto';
+import { CreateUserDto } from './dto/CreateUser.dto';
 import { UserService } from './users.service';
 
 @Controller('users')
